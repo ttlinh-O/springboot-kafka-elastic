@@ -1,0 +1,3 @@
+rootProject.name = 'common-config'
+include ':app-config-data'
+project(':app-config-data').projectDir = file('../app-config-data')

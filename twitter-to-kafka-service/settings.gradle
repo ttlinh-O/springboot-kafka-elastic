@@ -1,0 +1,15 @@
+rootProject.name = 'twitter-to-kafka-service'
+include ':app-config-data'
+project(':app-config-data').projectDir = file('../app-config-data')
+
+include ':kafka-admin'
+project(':kafka-admin').projectDir = file('../kafka/kafka-admin')
+
+include ':kafka-model'
+project(':kafka-model').projectDir = file('../kafka/kafka-model')
+
+include ':kafka-producer'
+project(':kafka-producer').projectDir = file('../kafka/kafka-producer')
+
+include ':common-config'
+project(':common-config').projectDir = file('../common-config')

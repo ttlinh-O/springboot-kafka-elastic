@@ -1,0 +1,7 @@
+rootProject.name = 'kafka-producer'
+include ':app-config-data'
+project(':app-config-data').projectDir = file('../../app-config-data')
+
+include ':kafka-model'
+project(':kafka-model').projectDir = file('../kafka-model')
+

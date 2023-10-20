@@ -1,0 +1,76 @@
+2023-10-14 13:58:47 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.7 with PID 39502 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/twitter-to-kafka-service/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-14 13:58:47 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-14 13:58:47 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-14 13:58:48 [restartedMain] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'com.example.commonconfig.TwitterToKafkaServiceConfigData' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-10-14 13:58:48 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-14 13:58:48 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.example.twittertokafkaservice.TwitterToKafkaServiceApplication required a bean of type 'com.example.commonconfig.TwitterToKafkaServiceConfigData' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.commonconfig.TwitterToKafkaServiceConfigData' in your configuration.
+
+2023-10-14 14:02:45 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.7 with PID 39633 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/twitter-to-kafka-service/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-14 14:02:45 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-14 14:02:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-14 14:02:46 [restartedMain] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.twittertokafkaservice.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-10-14 14:02:46 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-14 14:02:46 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.twittertokafkaservice.TwitterToKafkaServiceApplication required a bean of type 'com.example.twittertokafkaservice.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.twittertokafkaservice.runner.StreamRunner' in your configuration.
+
+2023-10-14 14:04:19 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.7 with PID 39675 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/twitter-to-kafka-service/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-14 14:04:19 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-14 14:04:19 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-14 14:04:20 [restartedMain] WARN  o.s.c.a.AnnotationConfigApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'twitterToKafkaServiceApplication': Unsatisfied dependency expressed through constructor parameter 1: No qualifying bean of type 'com.example.twittertokafkaservice.runner.StreamRunner' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2023-10-14 14:04:20 [restartedMain] INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-14 14:04:20 [restartedMain] ERROR o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of constructor in com.example.twittertokafkaservice.TwitterToKafkaServiceApplication required a bean of type 'com.example.twittertokafkaservice.runner.StreamRunner' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.example.twittertokafkaservice.runner.StreamRunner' in your configuration.
+
+2023-10-14 14:05:26 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - Starting TwitterToKafkaServiceApplication using Java 17.0.7 with PID 39724 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/twitter-to-kafka-service/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-14 14:05:26 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-14 14:05:26 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-14 14:05:26 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-14 14:05:26 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - Started TwitterToKafkaServiceApplication in 0.459 seconds (process running for 0.76)
+2023-10-14 14:05:26 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - initializing TwitterToKafka
+2023-10-14 14:05:26 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-10-14 14:05:26 [restartedMain] INFO  c.e.t.TwitterToKafkaServiceApplication - Hello from microservices!
+2023-10-14 14:05:26 [restartedMain] INFO  c.e.t.r.impl.MockKafkaStreamRunner - Starting mock filtering twitter streams for keywords [Java, Microservices, Spring, Kafka, Elasticsearch]
+2023-10-14 14:05:26 [pool-2-thread-1] INFO  c.e.t.l.TwitterToKafkaStatusListener - Twitter status with text elit congue Maecenas amet adipiscing Kafka adipiscing consectetuer ipsum Lorem
