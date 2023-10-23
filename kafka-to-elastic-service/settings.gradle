@@ -1,0 +1,17 @@
+rootProject.name = 'kafka-to-elastic-service'
+
+include ':kafka-admin'
+project(':kafka-admin').projectDir = file('../kafka/kafka-admin')
+
+include ':kafka-model'
+project(':kafka-model').projectDir = file('../kafka/kafka-model')
+
+include ':kafka-consumer'
+project(':kafka-consumer').projectDir = file('../kafka/kafka-consumer')
+
+// Because use of all above projects
+include ':common-config'
+project(':common-config').projectDir = file('../common-config')
+
+include ':app-config-data'
+project(':app-config-data').projectDir = file('../app-config-data')

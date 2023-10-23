@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: kafka-to-elastic-service
+  profiles:
+    active: kafka_to_elastic
+  config:
+    import: 'optional:configserver:'
+  cloud:
+    config:
+      name: kafka-to-elastic-services,config-client
+      username: spring_cloud_user
+      password: ENC(AVxMBejNka0hVcLGQ0+r3gFq3zbaDsbPWDCOuC/PoCSob3JCglJafbsuuoMDs7EhIKAi1ZbDskg7L7jrlFe/jA==)
+
+## use environment variable JASYPT_ENCRYPTOR_PASSWORD=Demo_Pwd!2020
+## replace password with password: ${JASYPT_ENCRYPTOR_PASSWORD}
+## when dockerized use environment variable JASYPT_ENCRYPTOR_PASSWORD
+## Or go to
+## -> edit configuration
+## -> Modify option
+## -> Program Arguments
+## add -Djasypt.encryptor.password='Demo_Pwd!2020'
+jasypt:
+  encryptor:
+    password: Demo_Pwd!2020
+
+log:
+  leve:
+    org.springframework.cloud.config: DEBUG

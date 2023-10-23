@@ -1,0 +1,392 @@
+2023-10-21 21:19:33 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-21 21:19:33 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 69144 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-21 21:19:33 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:19:33 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-21 21:19:33 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-21 21:19:33 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-21 21:19:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-21 21:19:33 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:19:33 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:19:33 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-21 21:19:33 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:19:33 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 665 ms
+2023-10-21 21:19:33 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@57b55771, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@d9eee94, org.springframework.security.web.context.SecurityContextHolderFilter@79f30f1, org.springframework.security.web.header.HeaderWriterFilter@3bfe0bb9, org.springframework.security.web.csrf.CsrfFilter@2f9e00b3, org.springframework.security.web.authentication.logout.LogoutFilter@1f88082c, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4259674b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@46d56473, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3f3cdfbb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@60274ad1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@44058a21, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7f1f065b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4e89ab56, org.springframework.security.web.access.ExceptionTranslationFilter@7d9f040e, org.springframework.security.web.access.intercept.AuthorizationFilter@52a1ef93]
+2023-10-21 21:19:34 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:19:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-21 21:19:34 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:19:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-21 21:19:34 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:19:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-21 21:19:34 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:19:34 [restartedMain] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-10-21 21:19:34 [restartedMain] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-21 21:19:34 [restartedMain] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-21 21:19:39 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:19:39 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-21 21:19:39 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 6.343 seconds (process running for 6.972)
+2023-10-21 21:19:50 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 5 class path changes (0 additions, 0 deletions, 5 modifications)
+2023-10-21 21:19:50 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:19:50 [Thread-6] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-21 21:19:50 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:19:50 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:19:50 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 69144 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-21 21:19:50 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:19:50 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-21 21:19:50 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-21 21:19:50 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:19:50 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:19:50 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-21 21:19:50 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:19:50 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 198 ms
+2023-10-21 21:19:50 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4bc9cfeb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@539d9d7, org.springframework.security.web.context.SecurityContextHolderFilter@7ca5e064, org.springframework.security.web.header.HeaderWriterFilter@5b224b90, org.springframework.security.web.csrf.CsrfFilter@125c5f8f, org.springframework.security.web.authentication.logout.LogoutFilter@36537bff, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@48c9a5db, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@42b608d5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5b43d6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@65e8b3be, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c757858, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b81acfe, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@200e6520, org.springframework.security.web.access.ExceptionTranslationFilter@19c3c61e, org.springframework.security.web.access.intercept.AuthorizationFilter@42b181e4]
+2023-10-21 21:19:50 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:19:50 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-21 21:19:50 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:19:50 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-21 21:19:50 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:19:50 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-21 21:19:50 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:19:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:19:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-21 21:19:55 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 4.641 seconds (process running for 23.036)
+2023-10-21 21:19:55 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-21 21:20:43 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 21:20:43 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 21:20:43 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-10-21 21:20:46 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5161053204996251164/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5161053204996251164/'
+2023-10-21 21:20:46 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5161053204996251164/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5161053204996251164/'
+2023-10-21 21:23:18 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 7 class path changes (0 additions, 0 deletions, 7 modifications)
+2023-10-21 21:23:18 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:23:18 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-21 21:23:18 [Thread-19] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-21 21:23:19 [Thread-19] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-21 21:23:20 [Thread-19] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-21 21:23:20 [Thread-19] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-21 21:23:20 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation. Stack trace of request processing thread:[
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ app//org.apache.sshd.common.channel.ChannelPipedInputStream.read(ChannelPipedInputStream.java:144)
+ java.base@17.0.7/java.io.FilterInputStream.read(FilterInputStream.java:132)
+ app//org.eclipse.jgit.util.io.TimeoutInputStream.read(TimeoutInputStream.java:90)
+ app//org.eclipse.jgit.util.IO.readFully(IO.java:201)
+ app//org.eclipse.jgit.transport.PacketLineIn.readLength(PacketLineIn.java:316)
+ app//org.eclipse.jgit.transport.PacketLineIn.readString(PacketLineIn.java:180)
+ app//org.eclipse.jgit.transport.BasePackConnection.readLine(BasePackConnection.java:190)
+ app//org.eclipse.jgit.transport.BasePackConnection.readAdvertisedRefsImpl(BasePackConnection.java:211)
+ app//org.eclipse.jgit.transport.BasePackConnection.readAdvertisedRefs(BasePackConnection.java:179)
+ app//org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:318)
+ app//org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+ app//org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:151)
+ app//org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:103)
+ app//org.eclipse.jgit.transport.Transport.fetch(Transport.java:1462)
+ app//org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:235)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.fetch(JGitEnvironmentRepository.java:550)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:297)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:262)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:144)
+ app//org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:62)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOneFromCandidate(MultipleJGitEnvironmentRepository.java:195)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:178)
+ app//org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:82)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper.lambda$findOne$3(ObservationEnvironmentRepositoryWrapper.java:75)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper$$Lambda$1221/0x000000080137a200.get(Unknown Source)
+ app//io.micrometer.observation.Observation.lambda$observe$4(Observation.java:544)
+ app//io.micrometer.observation.Observation$$Lambda$1222/0x000000080137a428.apply(Unknown Source)
+ app//io.micrometer.observation.Observation.observeWithContext(Observation.java:603)
+ app//io.micrometer.observation.Observation.observe(Observation.java:544)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper.findOne(ObservationEnvironmentRepositoryWrapper.java:75)
+ app//org.springframework.cloud.config.server.environment.EnvironmentEncryptorEnvironmentRepository.findOne(EnvironmentEncryptorEnvironmentRepository.java:64)
+ app//org.springframework.cloud.config.server.environment.EnvironmentController.getEnvironment(EnvironmentController.java:134)
+ app//org.springframework.cloud.config.server.environment.EnvironmentController.defaultLabelIncludeOrigin(EnvironmentController.java:116)
+ java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+ app//org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+ app//org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+ app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+ app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+ app//org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+ org.springframework.cloud.config.server.environment.EnvironmentController$$SpringCGLIB$$0.defaultLabelIncludeOrigin(<generated>)
+ java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+ java.base@17.0.7/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+ java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+ app//org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+ app//org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+ app//org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+ app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+ app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+ app//org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+ app//org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+ app//org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+ app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+ app//org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+ app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+ app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+ app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+ app//org.springframework.security.web.FilterChainProxy$$Lambda$1202/0x000000080136d648.doFilter(Unknown Source)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+ app//org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+ app//org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:200)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:188)
+ app//org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:174)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+ app//org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+ app//org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+ app//org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+ app//org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+ app//org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+ app//org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+ app//org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+ app//org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+ app//org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+ app//org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+ app//org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+ app//org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+ app//org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+ app//org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+ app//org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+ app//org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+ app//org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+ app//org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+ app//org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+ app//org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+ app//org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)]
+2023-10-21 21:23:20 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-timer-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Thread-33] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.7/sun.nio.ch.KQueuePort$EventHandlerTask.poll(KQueuePort.java:200)
+ java.base@17.0.7/sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:287)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[68a6e7c7]-nio2-thread-9] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [http-nio-8888-exec-3-StreamCopy] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ app//org.apache.sshd.common.channel.ChannelPipedInputStream.read(ChannelPipedInputStream.java:144)
+ java.base@17.0.7/java.io.InputStream.read(InputStream.java:218)
+ app//org.eclipse.jgit.util.io.StreamCopyThread.run(StreamCopyThread.java:94)
+2023-10-21 21:23:21 [Thread-19] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [http-nio-8888-exec-3-Timer] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ app//org.eclipse.jgit.util.io.InterruptTimer$AlarmState.run(InterruptTimer.java:162)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-21 21:23:21 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:23:21 [http-nio-8888-exec-3] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/ttlinh-O/config-server-repository
+2023-10-21 21:23:21 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5161053204996251164/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5161053204996251164/'
+2023-10-21 21:23:21 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5161053204996251164/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5161053204996251164/'
+2023-10-21 21:23:21 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:23:21 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 69144 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-21 21:23:21 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-21 21:23:21 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-21 21:23:21 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-21 21:23:21 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:23:21 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-21 21:23:21 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-21 21:23:21 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-21 21:23:21 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 202 ms
+2023-10-21 21:23:21 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b6dfedc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@621ecd21, org.springframework.security.web.context.SecurityContextHolderFilter@1120d813, org.springframework.security.web.header.HeaderWriterFilter@6912f467, org.springframework.security.web.csrf.CsrfFilter@36d747c3, org.springframework.security.web.authentication.logout.LogoutFilter@5bfb20e6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5aff5740, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7a1a96d4, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@427bc375, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@5881a0e9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1dc57cab, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d5ebe5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@17a8b53b, org.springframework.security.web.access.ExceptionTranslationFilter@2f26d5fb, org.springframework.security.web.access.intercept.AuthorizationFilter@5ed8e646]
+2023-10-21 21:23:21 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:23:21 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-21 21:23:21 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:23:21 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-21 21:23:21 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-21 21:23:21 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-21 21:23:21 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-21 21:23:25 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-21 21:23:25 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-21 21:23:25 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 4.736 seconds (process running for 233.629)
+2023-10-21 21:23:25 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-21 21:24:44 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-21 21:24:44 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-21 21:24:44 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-21 21:26:09 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:26:09 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:36:01 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:39:48 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:39:48 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:40:31 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:40:31 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:42:12 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:42:12 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:43:17 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
+2023-10-21 21:43:17 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-11212572819912555810/'
