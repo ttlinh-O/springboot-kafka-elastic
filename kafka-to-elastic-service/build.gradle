@@ -56,6 +56,9 @@ dependencies {
     implementation project(':kafka-admin')
     implementation project(':kafka-model')
     implementation project(':kafka-consumer')
+    implementation project(':elastic-model')
+    implementation project(':elastic-config')
+    implementation project(':elastic-index-client')
 }
 
 tasks.named('test') {

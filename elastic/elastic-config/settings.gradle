@@ -1,0 +1,6 @@
+rootProject.name = 'elastic-config'
+include ':app-config-data'
+project(':app-config-data').projectDir = file('../../app-config-data')
+
+//include ':elastic-index-client'
+//project(':elastic-index-client').projectDir = file('../elastic-index-client')

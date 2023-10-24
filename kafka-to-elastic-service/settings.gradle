@@ -15,3 +15,12 @@ project(':common-config').projectDir = file('../common-config')
 
 include ':app-config-data'
 project(':app-config-data').projectDir = file('../app-config-data')
+
+include 'elastic-model'
+project(':elastic-model').projectDir = file('../elastic/elastic-model')
+
+include 'elastic-config'
+project(':elastic-config').projectDir = file('../elastic/elastic-config')
+
+include 'elastic-index-client'
+project(':elastic-index-client').projectDir = file('../elastic/elastic-index-client')
