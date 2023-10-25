@@ -1,0 +1,1050 @@
+2023-10-24 12:38:54 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-24 12:38:54 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 95585 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 12:38:54 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 12:38:54 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-24 12:38:54 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-24 12:38:55 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-24 12:38:55 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 12:38:55 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:38:55 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 12:38:55 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 12:38:55 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 12:38:55 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 681 ms
+2023-10-24 12:38:55 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@d9eee94, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3f3cdfbb, org.springframework.security.web.context.SecurityContextHolderFilter@4cf74078, org.springframework.security.web.header.HeaderWriterFilter@231497e, org.springframework.security.web.csrf.CsrfFilter@21da7df6, org.springframework.security.web.authentication.logout.LogoutFilter@196e8a70, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6a977569, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@825b0ff, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4e89ab56, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1c15c0bc, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1fc71971, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@58349458, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@337a6329, org.springframework.security.web.access.ExceptionTranslationFilter@38271664, org.springframework.security.web.access.intercept.AuthorizationFilter@4259674b]
+2023-10-24 12:38:55 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:38:55 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 12:38:55 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:38:55 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 12:38:55 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:38:55 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 12:38:55 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-24 12:38:56 [restartedMain] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-10-24 12:38:56 [restartedMain] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-24 12:38:56 [restartedMain] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-24 12:39:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 12:39:01 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 6.464 seconds (process running for 7.015)
+2023-10-24 12:39:07 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2023-10-24 12:39:07 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:07 [Thread-6] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-24 12:39:07 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:07 [Thread-6] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:07 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 95585 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 12:39:07 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 12:39:07 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-24 12:39:07 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 12:39:07 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:07 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 12:39:07 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 12:39:07 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 12:39:07 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 165 ms
+2023-10-24 12:39:07 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6139646b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@36546139, org.springframework.security.web.context.SecurityContextHolderFilter@437b29b0, org.springframework.security.web.header.HeaderWriterFilter@6c70be9c, org.springframework.security.web.csrf.CsrfFilter@19a76b1d, org.springframework.security.web.authentication.logout.LogoutFilter@54e8b009, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6da610f0, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1d5ba551, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@6ba8c693, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@7c5f9db5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@61265d41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@74367115, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6b9a4c66, org.springframework.security.web.access.ExceptionTranslationFilter@496b9dc5, org.springframework.security.web.access.intercept.AuthorizationFilter@53a09356]
+2023-10-24 12:39:07 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:39:07 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 12:39:07 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:39:07 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 12:39:07 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:39:07 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 12:39:07 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-24 12:39:11 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:11 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 12:39:11 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 4.148 seconds (process running for 17.483)
+2023-10-24 12:39:11 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-24 12:39:13 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 12:39:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 12:39:13 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-24 12:39:16 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8385338798936817924/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8385338798936817924/'
+2023-10-24 12:39:16 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8385338798936817924/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8385338798936817924/'
+2023-10-24 12:39:22 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2023-10-24 12:39:22 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:22 [Thread-19] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-24 12:39:22 [Thread-19] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-24 12:39:22 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:22 [Thread-19] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:22 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 95585 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 12:39:22 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 12:39:22 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-24 12:39:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 12:39:22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:22 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 12:39:22 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 12:39:22 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 12:39:22 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 233 ms
+2023-10-24 12:39:22 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@29d3221, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5c383855, org.springframework.security.web.context.SecurityContextHolderFilter@456d3092, org.springframework.security.web.header.HeaderWriterFilter@2a476fea, org.springframework.security.web.csrf.CsrfFilter@149cd2b9, org.springframework.security.web.authentication.logout.LogoutFilter@2d2d6a1b, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@54452196, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@72427e6, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@218cebd5, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@127ef4b7, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37962b9c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@168d32e2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4432681f, org.springframework.security.web.access.ExceptionTranslationFilter@1ed7fdb9, org.springframework.security.web.access.intercept.AuthorizationFilter@74f541d6]
+2023-10-24 12:39:22 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:39:22 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 12:39:22 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:39:22 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 12:39:22 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:39:22 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 12:39:22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-24 12:39:26 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:39:26 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 12:39:26 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 4.478 seconds (process running for 32.704)
+2023-10-24 12:39:26 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-24 12:39:39 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 12:39:39 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 12:39:39 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-24 12:39:42 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8936054012548056260/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8936054012548056260/'
+2023-10-24 12:39:42 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8936054012548056260/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8936054012548056260/'
+2023-10-24 12:39:53 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8936054012548056260/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8936054012548056260/'
+2023-10-24 12:39:53 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8936054012548056260/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-8936054012548056260/'
+2023-10-24 12:40:53 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (0 additions, 6 deletions, 0 modifications)
+2023-10-24 12:40:53 [Thread-33] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:53 [Thread-33] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-24 12:40:53 [Thread-33] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-24 12:40:53 [Thread-33] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:53 [Thread-33] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:53 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 95585 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 12:40:53 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 12:40:53 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-24 12:40:53 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 12:40:53 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:53 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 12:40:53 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 12:40:53 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 12:40:53 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 225 ms
+2023-10-24 12:40:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b42c29a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5a1fb518, org.springframework.security.web.context.SecurityContextHolderFilter@51a4d89b, org.springframework.security.web.header.HeaderWriterFilter@1b6f8605, org.springframework.security.web.csrf.CsrfFilter@3573a743, org.springframework.security.web.authentication.logout.LogoutFilter@2a2238f7, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5bfba61b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@d820d61, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5cd20b3e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6025d813, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@79c52453, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6a3ae18d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@12f9a5f7, org.springframework.security.web.access.ExceptionTranslationFilter@665ea640, org.springframework.security.web.access.intercept.AuthorizationFilter@add6c36]
+2023-10-24 12:40:53 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:40:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 12:40:53 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:40:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 12:40:53 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:40:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 12:40:53 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-24 12:40:54 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (6 additions, 0 deletions, 0 modifications)
+2023-10-24 12:40:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 12:40:57 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 4.288 seconds (process running for 123.426)
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-24 12:40:57 [Thread-50] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:57 [Thread-50] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-24 12:40:57 [Thread-50] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:57 [Thread-50] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:57 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 95585 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 12:40:57 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 12:40:57 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:40:57 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 12:40:57 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 12:40:57 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 116 ms
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@700bfdb, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@675cb356, org.springframework.security.web.context.SecurityContextHolderFilter@6aba0362, org.springframework.security.web.header.HeaderWriterFilter@21dcad63, org.springframework.security.web.csrf.CsrfFilter@1109056a, org.springframework.security.web.authentication.logout.LogoutFilter@4e4f9138, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1579d559, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4c659429, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@3cd461f9, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@278d509f, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3341790a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@89697ed, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7110d754, org.springframework.security.web.access.ExceptionTranslationFilter@590c4c1b, org.springframework.security.web.access.intercept.AuthorizationFilter@127e484d]
+2023-10-24 12:40:57 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 12:40:57 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 12:40:57 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 12:40:57 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-24 12:41:01 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 12:41:01 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 12:41:01 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 3.963 seconds (process running for 127.421)
+2023-10-24 12:41:01 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-24 12:46:50 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 12:46:50 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 12:46:50 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2023-10-24 12:46:53 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 12:46:53 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 12:49:03 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 12:49:03 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 12:50:29 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 12:50:29 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 12:53:33 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 12:53:33 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:00:51 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:00:51 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:40:30 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:40:30 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:42:49 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:42:49 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:43:08 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:43:08 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:45:49 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 13:45:49 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:00:24 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:00:24 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:01:37 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:01:37 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:03:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:03:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:10:25 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:10:25 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:12:35 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:12:35 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:13:25 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:13:25 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:13:59 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:13:59 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:14:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:14:25 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:55:07 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:55:07 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:57:00 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:57:00 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:57:40 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 14:57:40 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:02:06 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:02:06 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:02:50 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:02:50 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:04:48 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:04:48 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:05:32 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:05:32 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:06:54 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:06:54 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:07:30 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:07:30 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:08:26 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:08:26 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:09:16 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:09:16 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:16:38 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:16:38 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:19:31 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:19:31 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:19:51 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:19:51 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:21:39 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:21:39 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:22:38 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:22:38 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:25:34 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-10-24 15:25:34 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:25:34 [Thread-59] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-24 15:25:34 [Thread-59] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-24 15:25:35 [Thread-59] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-24 15:25:36 [Thread-59] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-24 15:25:36 [Thread-59] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation. Stack trace of request processing thread:[
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ app//org.apache.sshd.common.future.DefaultSshFuture.await0(DefaultSshFuture.java:69)
+ app//org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:110)
+ app//org.apache.sshd.client.future.DefaultOpenFuture.verify(DefaultOpenFuture.java:39)
+ app//org.apache.sshd.client.future.DefaultOpenFuture.verify(DefaultOpenFuture.java:32)
+ app//org.eclipse.jgit.transport.sshd.SshdSession.exec(SshdSession.java:340)
+ app//org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:289)
+ app//org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+ app//org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:151)
+ app//org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:103)
+ app//org.eclipse.jgit.transport.Transport.fetch(Transport.java:1462)
+ app//org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:235)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.fetch(JGitEnvironmentRepository.java:550)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:297)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:262)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:144)
+ app//org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:62)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOneFromCandidate(MultipleJGitEnvironmentRepository.java:195)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:178)
+ app//org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:82)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper.lambda$findOne$3(ObservationEnvironmentRepositoryWrapper.java:75)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper$$Lambda$1221/0x00000008013aabe0.get(Unknown Source)
+ app//io.micrometer.observation.Observation.lambda$observe$4(Observation.java:544)
+ app//io.micrometer.observation.Observation$$Lambda$1222/0x00000008013aae08.apply(Unknown Source)
+ app//io.micrometer.observation.Observation.observeWithContext(Observation.java:603)
+ app//io.micrometer.observation.Observation.observe(Observation.java:544)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper.findOne(ObservationEnvironmentRepositoryWrapper.java:75)
+ app//org.springframework.cloud.config.server.environment.EnvironmentEncryptorEnvironmentRepository.findOne(EnvironmentEncryptorEnvironmentRepository.java:64)
+ app//org.springframework.cloud.config.server.environment.EnvironmentController.getEnvironment(EnvironmentController.java:134)
+ app//org.springframework.cloud.config.server.environment.EnvironmentController.defaultLabelIncludeOrigin(EnvironmentController.java:116)
+ jdk.internal.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+ java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+ app//org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+ app//org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+ app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+ app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+ app//org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+ org.springframework.cloud.config.server.environment.EnvironmentController$$SpringCGLIB$$0.defaultLabelIncludeOrigin(<generated>)
+ jdk.internal.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+ java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+ app//org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+ app//org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+ app//org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+ app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+ app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+ app//org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+ app//org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+ app//org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+ app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+ app//org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+ app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+ app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+ app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+ app//org.springframework.security.web.FilterChainProxy$$Lambda$1202/0x000000080139b9b0.doFilter(Unknown Source)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+ app//org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+ app//org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:200)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:188)
+ app//org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:174)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+ app//org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+ app//org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+ app//org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+ app//org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+ app//org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+ app//org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+ app//org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+ app//org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+ app//org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+ app//org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+ app//org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+ app//org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+ app//org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+ app//org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+ app//org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+ app//org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+ app//org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+ app//org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+ app//org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+ app//org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+ app//org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)]
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-timer-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Thread-172] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.7/sun.nio.ch.KQueuePort$EventHandlerTask.poll(KQueuePort.java:200)
+ java.base@17.0.7/sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:287)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-nio2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-nio2-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-nio2-thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-nio2-thread-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-nio2-thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-nio2-thread-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-nio2-thread-7] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[6f2c6d1d]-nio2-thread-8] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:25:36 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:25:36 [http-nio-8888-exec-7] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/ttlinh-O/config-server-repository
+2023-10-24 15:25:36 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:25:36 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5520009777507640639/'
+2023-10-24 15:25:36 [Thread-59] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:25:36 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 95585 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 15:25:36 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 15:25:36 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-24 15:25:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 15:25:36 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:25:36 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 15:25:36 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 15:25:36 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 15:25:36 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 184 ms
+2023-10-24 15:25:36 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@f06365c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54e2ee83, org.springframework.security.web.context.SecurityContextHolderFilter@15815ff8, org.springframework.security.web.header.HeaderWriterFilter@58ae3c03, org.springframework.security.web.csrf.CsrfFilter@7d872a20, org.springframework.security.web.authentication.logout.LogoutFilter@214d26d6, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5efa4150, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@369c028f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@581ed58e, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@37004905, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5113a142, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1ffb6b57, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6de3f7e9, org.springframework.security.web.access.ExceptionTranslationFilter@69d4ee51, org.springframework.security.web.access.intercept.AuthorizationFilter@16c9bec9]
+2023-10-24 15:25:36 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:25:36 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 15:25:36 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:25:36 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 15:25:36 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:25:36 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 15:25:36 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-24 15:25:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:25:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 15:25:41 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 4.574 seconds (process running for 8463.898)
+2023-10-24 15:25:41 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-24 15:26:30 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 15:26:30 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 15:26:30 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2023-10-24 15:26:33 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-4306176293827995196/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-4306176293827995196/'
+2023-10-24 15:26:33 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-4306176293827995196/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-4306176293827995196/'
+2023-10-24 15:27:06 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-4306176293827995196/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-4306176293827995196/'
+2023-10-24 15:27:06 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-4306176293827995196/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-4306176293827995196/'
+2023-10-24 15:27:34 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2023-10-24 15:27:34 [Thread-171] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:34 [Thread-171] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-24 15:27:34 [Thread-171] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-24 15:27:34 [Thread-171] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:34 [Thread-171] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:34 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 95585 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 15:27:34 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 15:27:34 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-24 15:27:34 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 15:27:34 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:34 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 15:27:34 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 15:27:34 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 15:27:34 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 186 ms
+2023-10-24 15:27:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5bf59620, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@12d7130a, org.springframework.security.web.context.SecurityContextHolderFilter@2c7fe424, org.springframework.security.web.header.HeaderWriterFilter@330d5679, org.springframework.security.web.csrf.CsrfFilter@64eb3692, org.springframework.security.web.authentication.logout.LogoutFilter@3e4f5d86, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66b525a9, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14e26468, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5d80f494, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@22d2e794, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@119d189f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d054d2f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@685b56f7, org.springframework.security.web.access.ExceptionTranslationFilter@1c580380, org.springframework.security.web.access.intercept.AuthorizationFilter@5e82ed31]
+2023-10-24 15:27:34 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:27:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 15:27:34 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:27:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 15:27:34 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:27:34 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 15:27:34 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-24 15:27:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 15:27:38 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 3.967 seconds (process running for 8581.217)
+2023-10-24 15:27:38 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-24 15:27:40 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 15:27:40 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 15:27:40 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-24 15:27:40 [File Watcher] INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 6 class path changes (0 additions, 0 deletions, 6 modifications)
+2023-10-24 15:27:40 [Thread-189] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:40 [Thread-189] INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2023-10-24 15:27:40 [Thread-189] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-24 15:27:41 [Thread-189] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-24 15:27:42 [Thread-189] INFO  o.a.catalina.core.StandardWrapper - Waiting for [1] instance(s) to be deallocated for Servlet [dispatcherServlet]
+2023-10-24 15:27:42 [Thread-189] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] is still processing a request that has yet to finish. This is very likely to create a memory leak. You can control the time allowed for requests to finish by using the unloadDelay attribute of the standard Context implementation. Stack trace of request processing thread:[
+ java.base@17.0.7/java.lang.Object.wait(Native Method)
+ app//org.apache.sshd.common.future.DefaultSshFuture.await0(DefaultSshFuture.java:69)
+ app//org.apache.sshd.common.future.AbstractSshFuture.verifyResult(AbstractSshFuture.java:110)
+ app//org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:39)
+ app//org.apache.sshd.client.future.DefaultAuthFuture.verify(DefaultAuthFuture.java:32)
+ app//org.apache.sshd.common.future.VerifiableFuture.verify(VerifiableFuture.java:68)
+ app//org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:172)
+ app//org.eclipse.jgit.transport.sshd.SshdSession.connect(SshdSession.java:101)
+ app//org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:256)
+ app//org.eclipse.jgit.transport.sshd.SshdSessionFactory.getSession(SshdSessionFactory.java:1)
+ app//org.eclipse.jgit.transport.SshTransport.getSession(SshTransport.java:107)
+ app//org.eclipse.jgit.transport.TransportGitSsh$SshFetchConnection.<init>(TransportGitSsh.java:281)
+ app//org.eclipse.jgit.transport.TransportGitSsh.openFetch(TransportGitSsh.java:153)
+ app//org.eclipse.jgit.transport.FetchProcess.executeImp(FetchProcess.java:151)
+ app//org.eclipse.jgit.transport.FetchProcess.execute(FetchProcess.java:103)
+ app//org.eclipse.jgit.transport.Transport.fetch(Transport.java:1462)
+ app//org.eclipse.jgit.api.FetchCommand.call(FetchCommand.java:235)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.fetch(JGitEnvironmentRepository.java:550)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.refresh(JGitEnvironmentRepository.java:297)
+ app//org.springframework.cloud.config.server.environment.JGitEnvironmentRepository.getLocations(JGitEnvironmentRepository.java:262)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.getLocations(MultipleJGitEnvironmentRepository.java:144)
+ app//org.springframework.cloud.config.server.environment.AbstractScmEnvironmentRepository.findOne(AbstractScmEnvironmentRepository.java:62)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOneFromCandidate(MultipleJGitEnvironmentRepository.java:195)
+ app//org.springframework.cloud.config.server.environment.MultipleJGitEnvironmentRepository.findOne(MultipleJGitEnvironmentRepository.java:178)
+ app//org.springframework.cloud.config.server.environment.CompositeEnvironmentRepository.findOne(CompositeEnvironmentRepository.java:82)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper.lambda$findOne$3(ObservationEnvironmentRepositoryWrapper.java:75)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper$$Lambda$1221/0x00000008013aabe0.get(Unknown Source)
+ app//io.micrometer.observation.Observation.lambda$observe$4(Observation.java:544)
+ app//io.micrometer.observation.Observation$$Lambda$1222/0x00000008013aae08.apply(Unknown Source)
+ app//io.micrometer.observation.Observation.observeWithContext(Observation.java:603)
+ app//io.micrometer.observation.Observation.observe(Observation.java:544)
+ app//org.springframework.cloud.config.server.environment.ObservationEnvironmentRepositoryWrapper.findOne(ObservationEnvironmentRepositoryWrapper.java:75)
+ app//org.springframework.cloud.config.server.environment.EnvironmentEncryptorEnvironmentRepository.findOne(EnvironmentEncryptorEnvironmentRepository.java:64)
+ app//org.springframework.cloud.config.server.environment.EnvironmentController.getEnvironment(EnvironmentController.java:134)
+ app//org.springframework.cloud.config.server.environment.EnvironmentController.defaultLabelIncludeOrigin(EnvironmentController.java:116)
+ jdk.internal.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+ java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+ app//org.springframework.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:281)
+ app//org.springframework.cloud.context.scope.GenericScope$LockedScopedProxyFactoryBean.invoke(GenericScope.java:482)
+ app//org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+ app//org.springframework.aop.framework.CglibAopProxy$CglibMethodInvocation.proceed(CglibAopProxy.java:751)
+ app//org.springframework.aop.framework.CglibAopProxy$DynamicAdvisedInterceptor.intercept(CglibAopProxy.java:703)
+ org.springframework.cloud.config.server.environment.EnvironmentController$$SpringCGLIB$$0.defaultLabelIncludeOrigin(<generated>)
+ jdk.internal.reflect.GeneratedMethodAccessor34.invoke(Unknown Source)
+ java.base@17.0.7/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+ java.base@17.0.7/java.lang.reflect.Method.invoke(Method.java:568)
+ app//org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+ app//org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+ app//org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+ app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:884)
+ app//org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797)
+ app//org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+ app//org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1081)
+ app//org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:974)
+ app//org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1011)
+ app//org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:903)
+ app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:564)
+ app//org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+ app//jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:205)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+ app//org.springframework.security.web.FilterChainProxy$$Lambda$1202/0x000000080139b9b0.doFilter(Unknown Source)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+ app//org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:100)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:126)
+ app//org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:120)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:200)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter.doFilterInternal(DefaultLogoutPageGeneratingFilter.java:58)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:188)
+ app//org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter.doFilter(DefaultLoginPageGeneratingFilter.java:174)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:227)
+ app//org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:221)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+ app//org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:117)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+ app//org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+ app//org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+ app//org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+ app//org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+ app//org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352)
+ app//org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+ app//org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+ app//org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174)
+ app//org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149)
+ app//org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:167)
+ app//org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90)
+ app//org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:482)
+ app//org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115)
+ app//org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93)
+ app//org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74)
+ app//org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341)
+ app//org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:391)
+ app//org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+ app//org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894)
+ app//org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1740)
+ app//org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+ app//org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+ app//org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+ app//org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)]
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[5c52dfd6]-timer-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:252)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:1672)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:1182)
+ java.base@17.0.7/java.util.concurrent.ScheduledThreadPoolExecutor$DelayedWorkQueue.take(ScheduledThreadPoolExecutor.java:899)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [Thread-201] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/sun.nio.ch.KQueue.poll(Native Method)
+ java.base@17.0.7/sun.nio.ch.KQueuePort$EventHandlerTask.poll(KQueuePort.java:200)
+ java.base@17.0.7/sun.nio.ch.KQueuePort$EventHandlerTask.run(KQueuePort.java:287)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[5c52dfd6]-nio2-thread-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[5c52dfd6]-nio2-thread-2] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[5c52dfd6]-nio2-thread-3] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[5c52dfd6]-nio2-thread-4] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[5c52dfd6]-nio2-thread-5] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:27:42 [Thread-189] WARN  o.a.c.loader.WebappClassLoaderBase - The web application [ROOT] appears to have started a thread named [sshd-JGitSshClient[5c52dfd6]-nio2-thread-6] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.base@17.0.7/jdk.internal.misc.Unsafe.park(Native Method)
+ java.base@17.0.7/java.util.concurrent.locks.LockSupport.park(LockSupport.java:341)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionNode.block(AbstractQueuedSynchronizer.java:506)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.unmanagedBlock(ForkJoinPool.java:3463)
+ java.base@17.0.7/java.util.concurrent.ForkJoinPool.managedBlock(ForkJoinPool.java:3434)
+ java.base@17.0.7/java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:1623)
+ java.base@17.0.7/java.util.concurrent.LinkedBlockingQueue.take(LinkedBlockingQueue.java:435)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.getTask(ThreadPoolExecutor.java:1062)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1122)
+ java.base@17.0.7/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+ java.base@17.0.7/java.lang.Thread.run(Thread.java:833)
+2023-10-24 15:27:42 [Thread-189] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:42 [http-nio-8888-exec-1] WARN  o.s.c.c.s.e.MultipleJGitEnvironmentRepository - Could not fetch remote for main remote: https://github.com/ttlinh-O/config-server-repository
+2023-10-24 15:27:42 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15800586751588427956/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15800586751588427956/'
+2023-10-24 15:27:42 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15800586751588427956/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15800586751588427956/'
+2023-10-24 15:27:42 [Thread-189] INFO  o.a.coyote.http11.Http11NioProtocol - Destroying ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:42 [restartedMain] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 95585 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 15:27:42 [restartedMain] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 15:27:43 [restartedMain] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=f2250bdc-cfe0-3d9e-b11c-856822dae58f
+2023-10-24 15:27:43 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 15:27:43 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:43 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 15:27:43 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 15:27:43 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 15:27:43 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 374 ms
+2023-10-24 15:27:43 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6c5030a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b7d403f, org.springframework.security.web.context.SecurityContextHolderFilter@46ee5e35, org.springframework.security.web.header.HeaderWriterFilter@2a150e9c, org.springframework.security.web.csrf.CsrfFilter@42a66d0b, org.springframework.security.web.authentication.logout.LogoutFilter@759c287f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6ce73226, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@7bb2e5f2, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4ede3774, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@782c2015, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37d1bdd6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@795165aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@576b8a32, org.springframework.security.web.access.ExceptionTranslationFilter@1bcaa096, org.springframework.security.web.access.intercept.AuthorizationFilter@6be39736]
+2023-10-24 15:27:43 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:27:43 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 15:27:43 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:27:43 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 15:27:43 [restartedMain] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 15:27:43 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 15:27:43 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-10-24 15:27:47 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 15:27:47 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 15:27:47 [restartedMain] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 4.948 seconds (process running for 8590.72)
+2023-10-24 15:27:47 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2023-10-24 15:38:20 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 15:38:20 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 15:38:20 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 19 ms
+2023-10-24 15:38:23 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 15:38:23 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 15:41:35 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 15:41:35 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 15:53:57 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 15:53:57 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 20:36:59 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 20:36:59 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 20:47:05 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 20:47:05 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 20:55:45 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 20:55:45 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 21:07:09 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 21:07:09 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 21:07:30 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 21:07:30 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 21:21:57 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 21:21:57 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5773654756823220307/'
+2023-10-24 21:39:04 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-24 21:39:04 [main] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 8357 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 21:39:04 [main] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 21:39:05 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4b895139-da17-3bb4-ba00-40348301d424
+2023-10-24 21:39:05 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 21:39:05 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 21:39:05 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 21:39:05 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 21:39:05 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 21:39:05 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 542 ms
+2023-10-24 21:39:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7a36c83a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@154b8cb6, org.springframework.security.web.context.SecurityContextHolderFilter@2fde9469, org.springframework.security.web.header.HeaderWriterFilter@6f3bd37f, org.springframework.security.web.csrf.CsrfFilter@9b367c8, org.springframework.security.web.authentication.logout.LogoutFilter@5403907, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@597d48ca, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6af87130, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@7b297740, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@191ec193, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@458031da, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@27ab206, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b7554d4, org.springframework.security.web.access.ExceptionTranslationFilter@7f0766ef, org.springframework.security.web.access.intercept.AuthorizationFilter@5329f6b3]
+2023-10-24 21:39:05 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 21:39:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 21:39:05 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 21:39:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 21:39:05 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 21:39:05 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 21:39:05 [main] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-10-24 21:39:05 [main] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-24 21:39:06 [main] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-24 21:39:10 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 21:39:10 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 21:39:10 [main] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 5.839 seconds (process running for 6.396)
+2023-10-24 21:39:15 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 21:39:15 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 21:39:15 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-24 21:39:19 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 21:39:19 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 21:40:06 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 21:40:06 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 21:41:49 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 21:41:49 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 21:59:15 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 21:59:15 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:01:50 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:01:50 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:03:58 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:03:58 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:06:01 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:06:01 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:06:39 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:06:39 [http-nio-8888-exec-4] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:07:35 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:07:35 [http-nio-8888-exec-6] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:08:01 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:08:01 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:08:14 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:08:14 [http-nio-8888-exec-10] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-2137654613388021856/'
+2023-10-24 22:09:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-24 22:09:14 [main] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 9819 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 22:09:14 [main] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 22:09:15 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4b895139-da17-3bb4-ba00-40348301d424
+2023-10-24 22:09:15 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 22:09:15 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 22:09:15 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 22:09:15 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 22:09:15 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 22:09:15 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 537 ms
+2023-10-24 22:09:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@73e1ecd0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11eec06b, org.springframework.security.web.context.SecurityContextHolderFilter@16f7f59f, org.springframework.security.web.header.HeaderWriterFilter@1fe8f5e8, org.springframework.security.web.csrf.CsrfFilter@77324a58, org.springframework.security.web.authentication.logout.LogoutFilter@76a9a009, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@342beaf6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@47058864, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@65600fb3, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4e958f08, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@53125718, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35563e4c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@25ce435, org.springframework.security.web.access.ExceptionTranslationFilter@1ea930eb, org.springframework.security.web.access.intercept.AuthorizationFilter@11e71181]
+2023-10-24 22:09:15 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:09:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 22:09:15 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:09:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 22:09:15 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:09:15 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 22:09:16 [main] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-10-24 22:09:16 [main] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-24 22:09:16 [main] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-24 22:09:20 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 22:09:20 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 22:09:20 [main] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 6.119 seconds (process running for 6.489)
+2023-10-24 22:09:26 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 22:09:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 22:09:26 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-24 22:09:29 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-3129119647522492925/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-3129119647522492925/'
+2023-10-24 22:09:29 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-3129119647522492925/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-3129119647522492925/'
+2023-10-24 22:09:40 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-3129119647522492925/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-3129119647522492925/'
+2023-10-24 22:09:40 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-3129119647522492925/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-3129119647522492925/'
+2023-10-24 22:11:31 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-24 22:11:31 [main] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 10005 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 22:11:31 [main] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 22:11:32 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4b895139-da17-3bb4-ba00-40348301d424
+2023-10-24 22:11:32 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 22:11:32 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 22:11:32 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 22:11:32 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 22:11:32 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 22:11:32 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 517 ms
+2023-10-24 22:11:32 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b297740, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b7554d4, org.springframework.security.web.context.SecurityContextHolderFilter@458031da, org.springframework.security.web.header.HeaderWriterFilter@447521e, org.springframework.security.web.csrf.CsrfFilter@3de79067, org.springframework.security.web.authentication.logout.LogoutFilter@b06d46d, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2c7c0e36, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@72c4a3aa, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@57ce2898, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1c7f9861, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@20cff21e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6cc48a17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1ea930eb, org.springframework.security.web.access.ExceptionTranslationFilter@6f3bd37f, org.springframework.security.web.access.intercept.AuthorizationFilter@77324a58]
+2023-10-24 22:11:32 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:11:32 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 22:11:32 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:11:32 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 22:11:32 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:11:32 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 22:11:33 [main] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-10-24 22:11:33 [main] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-24 22:11:33 [main] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-24 22:11:38 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 22:11:38 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 22:11:38 [main] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 6.397 seconds (process running for 6.859)
+2023-10-24 22:11:48 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 22:11:48 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 22:11:48 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-24 22:11:52 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5362902078233230633/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5362902078233230633/'
+2023-10-24 22:11:52 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5362902078233230633/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5362902078233230633/'
+2023-10-24 22:12:08 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5362902078233230633/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5362902078233230633/'
+2023-10-24 22:12:08 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5362902078233230633/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5362902078233230633/'
+2023-10-24 22:31:20 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-24 22:31:20 [main] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 10828 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 22:31:20 [main] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 22:31:20 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4b895139-da17-3bb4-ba00-40348301d424
+2023-10-24 22:31:21 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 22:31:21 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 22:31:21 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 22:31:21 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 22:31:21 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 22:31:21 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 517 ms
+2023-10-24 22:31:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@621f23ac, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7761e342, org.springframework.security.web.context.SecurityContextHolderFilter@73a845cb, org.springframework.security.web.header.HeaderWriterFilter@1bee0085, org.springframework.security.web.csrf.CsrfFilter@7be94cd6, org.springframework.security.web.authentication.logout.LogoutFilter@7b297740, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53125718, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@14e750c5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@51f68849, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@ad3f70a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7dbae40, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@b06d46d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4eb9ae4d, org.springframework.security.web.access.ExceptionTranslationFilter@27e44e9c, org.springframework.security.web.access.intercept.AuthorizationFilter@4ee8051c]
+2023-10-24 22:31:21 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:31:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 22:31:21 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:31:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 22:31:21 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:31:21 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 22:31:21 [main] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-10-24 22:31:21 [main] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-24 22:31:22 [main] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-24 22:31:26 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 22:31:26 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 22:31:26 [main] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 5.842 seconds (process running for 6.385)
+2023-10-24 22:31:37 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 22:31:37 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 22:31:37 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2023-10-24 22:31:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15127925424342890214/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15127925424342890214/'
+2023-10-24 22:31:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15127925424342890214/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15127925424342890214/'
+2023-10-24 22:32:08 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15127925424342890214/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15127925424342890214/'
+2023-10-24 22:32:08 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15127925424342890214/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-15127925424342890214/'
+2023-10-24 22:37:50 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-24 22:37:50 [main] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 11214 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 22:37:50 [main] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 22:37:50 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4b895139-da17-3bb4-ba00-40348301d424
+2023-10-24 22:37:50 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 22:37:50 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 22:37:50 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 22:37:50 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 22:37:50 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 22:37:50 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 562 ms
+2023-10-24 22:37:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5866731, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@56a05324, org.springframework.security.web.context.SecurityContextHolderFilter@7d50f2a8, org.springframework.security.web.header.HeaderWriterFilter@374ccb9, org.springframework.security.web.csrf.CsrfFilter@13f40d71, org.springframework.security.web.authentication.logout.LogoutFilter@54ccb3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@19fbc594, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1ea930eb, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@11e71181, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4faf1f4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37ca3ca8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a36c83a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@342beaf6, org.springframework.security.web.access.ExceptionTranslationFilter@2c7c0e36, org.springframework.security.web.access.intercept.AuthorizationFilter@4b3a01d8]
+2023-10-24 22:37:51 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:37:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 22:37:51 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:37:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 22:37:51 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 22:37:51 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 22:37:51 [main] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-10-24 22:37:51 [main] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-24 22:37:51 [main] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-24 22:37:56 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 22:37:56 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 22:37:56 [main] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 6.2 seconds (process running for 6.806)
+2023-10-24 22:38:00 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 22:38:00 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 22:38:00 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-24 22:38:04 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:38:04 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:38:38 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:38:38 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:40:49 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:40:49 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:42:49 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:42:49 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:49:33 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:49:33 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:53:21 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 22:53:21 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-5408813571844476391/'
+2023-10-24 23:01:00 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2023-10-24 23:01:00 [main] INFO  c.e.c.ConfigServerApplication - Starting ConfigServerApplication using Java 17.0.7 with PID 12501 (/Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/config-server/build/classes/java/main started by ttlinh in /Users/ttlinh/Work/Practice/Microservices/springboot-kafka-elastic/CommonConfig)
+2023-10-24 23:01:00 [main] INFO  c.e.c.ConfigServerApplication - No active profile set, falling back to 1 default profile: "default"
+2023-10-24 23:01:01 [main] INFO  o.s.cloud.context.scope.GenericScope - BeanFactory id=4b895139-da17-3bb4-ba00-40348301d424
+2023-10-24 23:01:01 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8888 (http)
+2023-10-24 23:01:01 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8888"]
+2023-10-24 23:01:01 [main] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-10-24 23:01:01 [main] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-24 23:01:01 [main] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-10-24 23:01:01 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 546 ms
+2023-10-24 23:01:01 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@56a05324, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@11e71181, org.springframework.security.web.context.SecurityContextHolderFilter@5864e8bf, org.springframework.security.web.header.HeaderWriterFilter@66713605, org.springframework.security.web.csrf.CsrfFilter@73a845cb, org.springframework.security.web.authentication.logout.LogoutFilter@9b2dc56, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2f4d32bf, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@2e0ad709, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@342beaf6, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@4f811029, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@191ec193, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@154b8cb6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@222acad, org.springframework.security.web.access.ExceptionTranslationFilter@307cf964, org.springframework.security.web.access.intercept.AuthorizationFilter@19fbc594]
+2023-10-24 23:01:01 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/actuator/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 23:01:01 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/actuator/**']
+2023-10-24 23:01:01 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='/encrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 23:01:01 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='/encrypt/**']
+2023-10-24 23:01:01 [main] WARN  o.s.s.c.a.web.builders.WebSecurity - You are asking Spring Security to ignore Mvc [pattern='decrypt/**']. This is not recommended -- please use permitAll via HttpSecurity#authorizeHttpRequests instead.
+2023-10-24 23:01:01 [main] INFO  o.s.s.web.DefaultSecurityFilterChain - Will not secure Mvc [pattern='decrypt/**']
+2023-10-24 23:01:02 [main] INFO  o.a.s.c.u.s.b.BouncyCastleSecurityProviderRegistrar - getOrCreateProvider(BC) created instance of org.bouncycastle.jce.provider.BouncyCastleProvider
+2023-10-24 23:01:02 [main] INFO  o.a.s.c.u.s.e.EdDSASecurityProviderRegistrar - getOrCreateProvider(EdDSA) created instance of net.i2p.crypto.eddsa.EdDSASecurityProvider
+2023-10-24 23:01:02 [main] INFO  o.a.s.c.i.DefaultIoServiceFactoryFactory - No detected/configured IoServiceFactoryFactory; using Nio2ServiceFactoryFactory
+2023-10-24 23:01:06 [main] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8888"]
+2023-10-24 23:01:06 [main] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 8888 (http) with context path ''
+2023-10-24 23:01:06 [main] INFO  c.e.c.ConfigServerApplication - Started ConfigServerApplication in 5.988 seconds (process running for 6.619)
+2023-10-24 23:01:21 [http-nio-8888-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-24 23:01:21 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2023-10-24 23:01:21 [http-nio-8888-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2023-10-24 23:01:25 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:01:25 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:01:57 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:01:57 [http-nio-8888-exec-2] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:04:54 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:04:54 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:05:29 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:05:29 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:09:18 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:09:18 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:10:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:10:40 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:14:41 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:14:41 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:18:35 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:18:35 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:27:50 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:27:50 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:30:41 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:30:41 [http-nio-8888-exec-9] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:31:36 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:31:36 [http-nio-8888-exec-1] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:38:34 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:38:34 [http-nio-8888-exec-3] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:39:43 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-kafka_to_elastic.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:39:43 [http-nio-8888-exec-5] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:42:13 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client-twitter_to_kafka.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'
+2023-10-24 23:42:13 [http-nio-8888-exec-7] INFO  o.s.c.c.s.e.NativeEnvironmentRepository - Adding property source: Config resource 'file [/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/config-client.yml]' via location 'file:/var/folders/sb/jdhnfqfx10lf655k623_tl400000gn/T/config-repo-16716817791507281551/'

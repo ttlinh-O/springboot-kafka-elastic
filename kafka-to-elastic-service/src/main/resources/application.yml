@@ -7,7 +7,7 @@ spring:
     import: 'optional:configserver:'
   cloud:
     config:
-      name: kafka-to-elastic-services,config-client
+      name: kafka-to-elastic-service,config-client
       username: spring_cloud_user
       password: ENC(AVxMBejNka0hVcLGQ0+r3gFq3zbaDsbPWDCOuC/PoCSob3JCglJafbsuuoMDs7EhIKAi1ZbDskg7L7jrlFe/jA==)
 

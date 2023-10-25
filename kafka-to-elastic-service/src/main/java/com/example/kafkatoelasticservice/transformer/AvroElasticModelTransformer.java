@@ -7,6 +7,7 @@ import org.springframework.stereotype.Component;
 import java.time.Instant;
 import java.time.LocalDateTime;
 import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.util.List;
 
 @Component
@@ -16,7 +17,7 @@ public class AvroElasticModelTransformer {
                 .map(twitterAvroModel -> TwitterIndexModel.builder()
                         .userId(twitterAvroModel.getUserId())
                         .text(twitterAvroModel.getText())
-                        .createdAt(LocalDateTime.ofInstant(Instant.ofEpochMilli(twitterAvroModel.getCreatedAt()),
+                        .createdAt(ZonedDateTime.ofInstant(Instant.ofEpochMilli(twitterAvroModel.getCreatedAt()),
                                 ZoneId.systemDefault()))
                         .build())
                 .toList();

@@ -1,5 +1,6 @@
-package com.example.elasticindexclient.client.repository;
+package com.example.elasticindexclient.client.service.impl;
 
+import com.example.elasticindexclient.client.repository.TwitterElasticsearchIndexRepository;
 import com.example.elasticindexclient.client.service.ElasticIndexClient;
 import com.example.elasticmodel.index.impl.TwitterIndexModel;
 import lombok.RequiredArgsConstructor;
