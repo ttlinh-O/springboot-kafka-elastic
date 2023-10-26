@@ -1,1 +1,3 @@
 rootProject.name = 'elastic-model'
+//include ':elastic-config'
+//project('elastic-config').projectDir = file('../elastic-config')
