@@ -4,27 +4,27 @@ import com.example.elasticindexclient.client.repository.TwitterElasticsearchInde
 import com.example.elasticindexclient.client.service.ElasticIndexClient;
 import com.example.elasticmodel.index.impl.TwitterIndexModel;
 import lombok.RequiredArgsConstructor;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Primary
 @Service
-@Slf4j
+@ConditionalOnProperty(name = "elastic-config.is-repository", havingValue = "true", matchIfMissing = true)
 @RequiredArgsConstructor
-@ConditionalOnProperty(name = "elastic-config.is-repository", havingValue = "false")
 public class TwitterElasticRepositoryIndexClient implements ElasticIndexClient<TwitterIndexModel> {
+    private static final Logger LOG = LoggerFactory.getLogger(TwitterElasticRepositoryIndexClient.class);
+
     private final TwitterElasticsearchIndexRepository twitterElasticsearchIndexRepository;
 
     @Override
     public List<String> save(List<TwitterIndexModel> documents) {
-        List<TwitterIndexModel> repositoryResponse = (List<TwitterIndexModel>) twitterElasticsearchIndexRepository.saveAll(documents);
+        List<TwitterIndexModel> repositoryResponse =
+                (List<TwitterIndexModel>) twitterElasticsearchIndexRepository.saveAll(documents);
         List<String> ids = repositoryResponse.stream().map(TwitterIndexModel::getId).toList();
-        log.info("Documents indexed successfully with type: {} and ids: {}", TwitterIndexModel.class.getCanonicalName(),
-                ids);
+        LOG.info("Documents indexed successfully with type: {} and ids: {}", TwitterIndexModel.class.getName(), ids);
         return ids;
     }
 }

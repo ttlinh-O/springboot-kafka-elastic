@@ -1,3 +1,1 @@
 rootProject.name = 'CommonConfig'
-include ':app-config-data'
-project(':app-config-data').projectDir = file('../app-config-data')

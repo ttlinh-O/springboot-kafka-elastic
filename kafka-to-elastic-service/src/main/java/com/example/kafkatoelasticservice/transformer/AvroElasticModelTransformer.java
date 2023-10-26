@@ -15,6 +15,7 @@ public class AvroElasticModelTransformer {
     public List<TwitterIndexModel> getElasticModels(List<TwitterAvroModel> twitterAvroModels) {
         return twitterAvroModels.stream()
                 .map(twitterAvroModel -> TwitterIndexModel.builder()
+                        .id(String.valueOf(twitterAvroModel.getId()))
                         .userId(twitterAvroModel.getUserId())
                         .text(twitterAvroModel.getText())
                         .createdAt(ZonedDateTime.ofInstant(Instant.ofEpochMilli(twitterAvroModel.getCreatedAt()),
