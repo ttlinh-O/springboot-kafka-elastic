@@ -9,7 +9,7 @@ import org.springframework.data.elasticsearch.repository.config.EnableElasticsea
 
 @Configuration
 @RequiredArgsConstructor
-@EnableElasticsearchRepositories(basePackages = "com.example.elasticindexclient.client.repository")
+@EnableElasticsearchRepositories(basePackages = "com.example.elastic")
 public class ElasticsearchConfig extends ElasticsearchConfiguration {
     private final ElasticConfigData elasticConfigData;
 

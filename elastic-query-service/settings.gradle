@@ -1,0 +1,19 @@
+rootProject.name = 'elastic-query-service'
+
+include ':app-config-data'
+project(':app-config-data').projectDir = file('../app-config-data')
+
+include ':elastic-config'
+project(':elastic-config').projectDir = file('../elastic/elastic-config')
+
+include ':elastic-query-client'
+project(':elastic-query-client').projectDir = file('../elastic/elastic-query-client')
+
+include ':elastic-index-client'
+project(':elastic-index-client').projectDir = file('../elastic/elastic-index-client')
+
+include ':elastic-model'
+project(':elastic-model').projectDir = file('../elastic/elastic-model')
+
+include ':common-util'
+project(':common-util').projectDir = file('../common-util')

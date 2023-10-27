@@ -2,7 +2,7 @@ package com.example.kafkatoelasticservice.consumer.impl;
 
 import com.example.appconfigdata.KafkaConfigData;
 import com.example.appconfigdata.KafkaConsumerConfigData;
-import com.example.elasticindexclient.client.service.ElasticIndexClient;
+import com.example.elastic.index.client.service.ElasticIndexClient;
 import com.example.elasticmodel.index.impl.TwitterIndexModel;
 import com.example.kafka.admin.client.KafkaAdminClient;
 import com.example.kafkatoelasticservice.consumer.kafkaConsumer;

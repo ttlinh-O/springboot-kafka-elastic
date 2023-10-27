@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: elastic-query-service
+  profiles:
+    active: elastic_query
+  config:
+    import: "optional:configserver:"
+  cloud:
+    config:
+      uri: http://localhost:8888
+      name: elastic-query-service,config-client
+      username: spring_cloud_user
+      password: ENC(AVxMBejNka0hVcLGQ0+r3gFq3zbaDsbPWDCOuC/PoCSob3JCglJafbsuuoMDs7EhIKAi1ZbDskg7L7jrlFe/jA==)
+
+## use environment variable JASYPT_ENCRYPTOR_PASSWORD=Demo_Pwd!2020
+## replace password with password: ${JASYPT_ENCRYPTOR_PASSWORD}
+## when dockerized use environment variable JASYPT_ENCRYPTOR_PASSWORD
+## Or go to
+## -> edit configuration
+## -> Modify option
+## -> Program Arguments
+## add -Djasypt.encryptor.password='Demo_Pwd!2020'
+jasypt:
+  encryptor:
+    password: Demo_Pwd!2020
+
+logging:
+  level:
+    org.springframework.cloud.config: DEBUG

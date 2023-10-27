@@ -8,3 +8,6 @@ project(':elastic-index-client').projectDir = file('../elastic-index-client')
 //Because of depend on config
 include ':elastic-model'
 project(':elastic-model').projectDir = file('../elastic-model')
+
+include ':common-util'
+project(':common-util').projectDir = file('../../common-util')
