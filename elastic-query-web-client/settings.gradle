@@ -1,0 +1,4 @@
+rootProject.name = 'elastic-query-web-client'
+
+include ':app-config-data'
+project(':app-config-data').projectDir = file('../app-config-data')

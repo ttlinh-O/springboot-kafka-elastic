@@ -1,4 +1,4 @@
-package com.example.elasticqueryservice.config;
+package com.example.elastic.query.web.client.config;
 
 import com.example.appconfigdata.UserConfigData;
 import lombok.RequiredArgsConstructor;
@@ -15,36 +15,41 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 
+
 @EnableWebSecurity
-@Configuration
 @RequiredArgsConstructor
-public class WebSecurityConfig {
+public class WebSecurityConfig{
+
     private final UserConfigData userConfigData;
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception {
         httpSecurity
+                .httpBasic(Customizer.withDefaults())
                 .authorizeHttpRequests(requests -> requests
-                            .requestMatchers("/**").hasRole("USER")
-                            .anyRequest().permitAll()
-                ).httpBasic(Customizer.withDefaults());
+                        .requestMatchers("/").permitAll()
+                        .requestMatchers("/**").hasRole("USER")
+                        .anyRequest().fullyAuthenticated())
+                .logout(logout -> logout
+                        .logoutSuccessUrl("/")
+                        .invalidateHttpSession(true)
+                        .deleteCookies("JSESSIONID"));
 
         return httpSecurity.build();
     }
 
-    // Or use this way
     @Bean
-    public UserDetailsService userDetailService() {
-        UserDetails user = User.withUsername(userConfigData.getUsername())
-                .password(passwordEncoder().encode(userConfigData.getPassword()))
-                //.password("{noop}yourpassword) indicate that do not use password end coding
+    public UserDetailsService userDetailsService()  {
+        UserDetails user = User
+                .withUsername(userConfigData.getUsername())
+                .password(userConfigData.getPassword())
                 .roles(userConfigData.getRoles())
                 .build();
         return new InMemoryUserDetailsManager(user);
     }
 
     @Bean
-    protected PasswordEncoder passwordEncoder() {
+    public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
     }
 }

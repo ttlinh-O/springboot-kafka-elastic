@@ -5,7 +5,6 @@ import com.example.elasticqueryservice.api.ElasticDocumentController;
 import com.example.elasticqueryservice.model.ElasticQueryServiceResponseModel;
 import com.example.elasticqueryservice.transformer.ElasticToResponseModelTransformer;
 import org.springframework.hateoas.server.mvc.RepresentationModelAssemblerSupport;
-import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
